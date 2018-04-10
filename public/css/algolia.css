@@ -11,7 +11,7 @@
   transition: .2s;
   font-family: "Montserrat", sans-serif;
   box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
-  font-size: 12px;
+  font-size: 14px;
   box-sizing: border-box;
   color: #333;
   -webkit-appearance: none;
@@ -80,8 +80,8 @@
   }
 
   .algolia-thumb {
-      max-width: 35px;
-      max-height: 35px;
+      max-width: 50px;
+      max-height: 50px;
   }
 
   .algolia-details {
