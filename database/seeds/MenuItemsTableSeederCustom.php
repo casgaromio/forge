@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\Menu;
 use TCG\Voyager\Models\MenuItem;
-
 class MenuItemsTableSeederCustom extends Seeder
 {
     /**
@@ -34,7 +32,6 @@ class MenuItemsTableSeederCustom extends Seeder
                 'parent_id'  => null,
                 'order'      => 1,
             ])->save();
-
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
                 'title' => 'Orders',
@@ -48,9 +45,8 @@ class MenuItemsTableSeederCustom extends Seeder
                     'color' => null,
                     'parent_id' => null,
                     'order' => 2,
-                ])-save();
+                ])->save();
             }
-
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
                 'title'   => 'Products',
@@ -259,7 +255,6 @@ class MenuItemsTableSeederCustom extends Seeder
             |--------------------------------------------------------------------------
             */
             $menu = Menu::where('name', 'main')->firstOrFail();
-
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
                 'title'   => 'Shop',
